@@ -10,6 +10,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 		System.out.println("2ND MINI PROJECT HAS STARTED !!");
 		System.out.println("2ND MINI PROJECT HAS STARTED !!");
+                System.out.println("2ND MINI PROJECT HAS STARTED !!");
 	}
 
 }
