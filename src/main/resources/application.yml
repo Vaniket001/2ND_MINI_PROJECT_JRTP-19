@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    password: password
+    #password: Vishal@80024
+    #url: jdbc:mysql://localhost:3306/user_mgmt
+    #url:  jdbc:mysql://usermanagementdb.cnbviaxce5cw.ap-south-1.rds.amazonaws.com:3306/user_mgmt
+    url:  jdbc:h2:mem:user_mgmt
+    driver-class-name: org.h2.Driver
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587   
+    username: kumaraniket900@gmail.com
+    password: aniket@123
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
